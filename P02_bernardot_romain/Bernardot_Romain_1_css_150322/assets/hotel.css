@@ -1,0 +1,141 @@
+
+
+.hotels /* Définit la section hotels */
+{
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 40px;
+    flex: 2;
+}
+
+.hotels  h2
+{
+    margin: 0;
+}
+
+.liste-hotel /* Div qui englobe les descriptif des hotels <a> <article> etc... */
+{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 30px;
+    margin: 30px 0 50px;
+}
+
+.article-hotel /* article définissant un Hotel img + descriptif etc.. */
+{
+    display: grid;
+    height: 170px;
+    grid-template-rows: 1fr 60%;
+    box-sizing: border-box;
+    border: 5px solid #FFF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 7px #C1C1C1;
+}
+
+.article-hotel img
+{
+    width: 100%;
+    height: 70px;
+    object-fit: cover;
+}
+
+.description-hotel /* Ensemble nom + prix + nb étoiles */
+{
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #FFF;
+    padding-left: 5px;
+}
+
+.description-hotel p
+{
+    margin-top: 10px;
+}
+
+.avis-hotel /* Nb étoiles */
+{
+    margin-top: 10px;
+    word-spacing: -1ch;
+}
+
+.fa-star /* correspond au <i> */
+{
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.blueStar /* couleur des étoiles */
+{
+    color: #0065FC;
+}
+
+.greyStar /* couleur des étoiles */
+{
+    color: #F2F2F2;
+}
+
+.afficher-plus
+{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Version Tablette */
+@media screen and (max-width: 991px)
+{
+    .hotels
+    {
+        order: 2;
+        margin-left: 0;
+    }
+
+    .contenant-hotel
+    {
+        flex-direction: column;
+    }
+
+    .avis-hotel
+    {
+        margin-top: -20px;
+    }
+}
+
+/* Version smartphone */
+
+@media screen and (max-width: 767px)
+{
+    .article-hotel
+    {
+        height: 200px;
+    }
+
+    .hotels
+    {
+        padding: 0 20px;
+        background-color: initial;
+    }
+
+    .liste-hotel
+    {
+        grid-template: repeat(6, 1fr) / 1fr;
+        gap: 15px;
+    }
+
+    .article-hotel img
+    {
+        height: 100px;
+    }
+
+    .description-hotel p
+    {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .avis-hotel
+    {
+        margin-top: -5px;
+    }
+}

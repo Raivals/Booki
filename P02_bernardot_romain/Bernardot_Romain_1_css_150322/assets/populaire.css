@@ -1,0 +1,147 @@
+
+.populaire /* Correspond à la section*/
+{
+	margin-top: 20px;
+    margin-right: 0px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 40px;
+    flex: 1;
+    margin-left: 3%;
+}
+
+
+.Icone-populaire /* div du h2 + <i> à coté du titre */
+{
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.Icone-populaire h2
+{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.Icone-populaire i
+{
+    font-size: 24px;
+}
+
+.article-populaire /* correspond a chaques articles */
+{
+    height: 120px;
+    border: 5px solid #FFF;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 7px #C1C1C1;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.article-populaire img
+{
+    width: 40%;
+    object-fit: cover;
+}
+
+.description-populaire /* div description h3 + p + étoiles avis */
+{
+    display: flex;
+    flex: 1;
+    background-color: #FFF;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.nom-hotel 
+{
+    margin: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.description-populaire .nom-hotel + p{
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+/* Version Tablette */
+@media screen and (max-width: 991px)
+{
+ 	.populaire
+ 	{
+        margin: 20px 0 10px 0;
+    }
+
+    .article-populaire
+    {
+        height: 150px;
+    }
+
+    .description-populaire .nom-hotel
+    {
+        font-size: 15px;
+    }
+
+    .description-populaire p
+    {
+        font-size: 12px;
+    }
+
+    .description-populaire .fa-star
+    {
+        font-size: 12px;
+    }   
+
+   .fa-star
+    {
+       margin-top: 20px;
+    }
+}
+
+/* Version smartphone */
+
+@media screen and (max-width: 767px)
+{
+	.populaire 
+	{
+        border-radius: 0;
+        padding: 40px 20px 30px;
+        margin-bottom: 40px;
+    }
+
+    .article-populaire
+    {
+        height: 145px;
+        margin-bottom: 10px;
+    }
+
+    .Icone-populaire i
+    {
+        font-size: 22px;
+    }
+
+    .nom-hotel
+    {
+    	margin-top: 5px;
+        font-size: 15px !important;
+    }
+
+    .description-populaire p
+    {
+        font-size: 14px;
+    }
+
+    .description-populaire
+    {
+        padding: 15px 10px 10px 20px;
+    }
+
+    .fa-star
+    {
+        font-size: 13px !important;
+        letter-spacing: 1px;
+    }
+}

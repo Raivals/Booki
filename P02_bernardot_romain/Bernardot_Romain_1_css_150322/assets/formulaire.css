@@ -1,0 +1,133 @@
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+h1
+{
+    font-size: 20px;
+}
+
+.header-footer /* Définition du paragraphe */ 
+{
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.recherche /* Div qui englobe la partie formulaire (titre compris) */
+{
+    margin-bottom: 30px;
+}
+
+.recherche h1
+ {
+    margin-bottom: 10px;
+ }
+
+ .recherche .header-footer
+ {
+    margin-top: 10px;
+ }
+
+ .formulaire
+ {
+    margin-bottom: 30px;
+    height: 45px;
+    display: flex;
+ }
+
+ .contenant /* Div qui englobe le <i> de localisation */
+ {
+    padding: 10px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    width: 30px; 
+    flex-shrink: 0;
+ }
+
+ .contenant i
+ {
+    margin: 4px 0 0 10px;
+    font-size: 15px;
+ }
+
+ .Destination /* Fait référence à <input> */
+ {
+    padding: 10px;    
+    border: 1px solid #F2F2F2;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 180px;
+ }
+
+ .Destination: placeholder
+ {
+    color: black;
+ }
+
+.searchButton /* Boutton de recherche */
+{
+    font-size: 15px;
+    font-weight: bold; 
+    width: 150px;
+    background-color: #0065FC;
+    border: none;
+    padding: 11px;
+    border-radius: 0 15px 15px 0;
+    color: #F2F2F2;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.searchButton i
+{
+    display: none;
+}
+
+/* Version Tablette */
+@media screen and (max-width: 991px)
+{
+
+}
+
+/* Version smartphone */
+@media screen and (max-width: 767px)
+{
+    .recherche
+    {
+        margin: 30px 20px;
+    }
+    .Destination
+    {
+        flex: 1;
+    }
+
+    .formulaire
+    {
+        margin: 35px 0 30px;
+    }
+
+    .searchButton
+    {
+        position: relative;
+        width: 50px;
+        border-radius: 15px;
+        left: -20px ;
+    } 
+
+    .searchButton span
+    {
+        display: none;
+    }
+    .searchButton i 
+    {
+        display: inline-block;
+    }
+
+    .filters
+    {
+        margin-bottom: 12px;
+    }
+}

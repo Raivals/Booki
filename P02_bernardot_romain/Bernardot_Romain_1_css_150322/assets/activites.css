@@ -1,0 +1,111 @@
+
+#Activités /* Correspond au H2 activité */
+{
+    margin: 25px 0 10px 0;
+}
+.liste-activites /* Correspond a la div qui englobe le détails des activités */
+{
+    padding: 20px 0 20px 0;
+    display: grid;
+    grid-template: repeat(12, 1fr) / repeat(4, 1fr);
+    gap: 25px;
+    grid-auto-flow: column;
+}
+
+.row12 /* Correspond à taille que prend  vieux port & Calanques */
+{
+    grid-row-end: span 11;
+}
+
+.row6 /* Correspond à taille que prend port pomègues & parque longchamp */
+{
+    grid-row-end: span 6;
+}
+
+.row5 /* Correspond à taille que prend Notre Dame & Iles friouls */
+{
+    grid-row-end: span 5;      
+}
+
+.type-activite /* Correspond aux divs qui englobent les images et l'intutilé des activités */
+{
+    display: grid;
+    grid-template-rows: 1fr 50px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 7px #C1C1C1;
+}
+
+.type-activite img /* Correspond aux divs qui englobent les images et l'intutilé des activités */
+{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+
+
+.description-activite /* Correspond aux intutilé des activités */
+{
+    align-self: center;
+    background-color: #FFF;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* Version Tablette */
+@media screen and (max-width: 991px)
+{
+    #Activités /* Correspond au H2 activité */
+    {
+        height: auto; 
+    }
+
+   
+    .row12, .row5, .row6  /* Correspond aux tailles des éléments activités */
+    {
+        grid-row-end: span 6;
+        grid-column-end: span 9;
+    }
+
+    .description-activite /* Correspond aux intutilé des activités */
+    {
+        font-size: 15px;
+    }
+
+}
+
+/* Version smartphone */
+
+@media screen and (max-width: 767px)
+{
+
+    #Activités  /* Correspond au H2 activité */
+    {
+        margin: 25px 0 10px 20px;
+    }
+
+    .liste-activites /* Correspond a la div qui englobe le détails des activités */
+    {
+        grid-template: repeat(6, 1fr) / 1fr;;
+        grid-auto-flow: initial;
+        gap: 24px;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .row12, .row5, .row6 /* Correspond aux tailles des éléments activités */
+    {
+        grid-row-end: span 1;
+        grid-column-end: span 1;
+    }
+
+    .images-activites
+    {
+        height: 150px;
+    }
+}

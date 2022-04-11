@@ -1,0 +1,54 @@
+h4
+{
+    font-size: 18px;
+}
+
+footer
+{
+    padding: 40px 50px 50px;
+    background-color: #F2F2F2;
+}
+
+footer div
+{
+    flex: 1;
+}
+
+footer li
+{
+    margin-bottom: 15px;
+    list-style-type:none;
+    margin-left: -40px;
+}
+
+footer a:hover
+{
+    font-weight: bold;
+    color: #0065FC;
+}
+
+/* Version Tablette */
+@media screen and (max-width: 991px)
+{
+    footer div
+    {
+        padding: 10px;
+    }
+
+}
+
+/* Version smartphone */
+
+@media screen and (max-width: 767px)
+{
+    footer
+    {
+        flex-direction: column;
+        padding: 45px 30px;
+    }
+
+    footer div
+    {
+        padding: 0;
+    }
+}

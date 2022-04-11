@@ -1,0 +1,105 @@
+#onglet /* Fait référence à la liste horizontale "hébergement et activités" */
+{
+    padding:0;                            
+    margin:0;
+    list-style-type:none;
+}
+
+header
+{
+    justify-content: space-between;
+    margin-bottom: 35px;
+    display: flex;
+}
+
+#logo-site /* Div qui le logo du site */
+{
+    flex: 1;
+    margin: 40px 0 0 15px;  
+    height: 60px;
+}
+
+.navigation /* Div qui englobe la partie navigation  */
+{
+    height: 50px;
+    padding-top: 50px;
+}
+
+nav .li-onglet /* Définit précisément le contenant des li */
+{
+    font-size: 15px;
+    float: left;
+}
+
+nav .a-onglet
+{
+    padding: 40px 30px 0;
+    text-decoration: none;
+    color: grey;
+}
+
+.navigation:hover
+{
+    color: #0065FC;
+}
+nav .li-onglet .a-onglet:hover
+{ 
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+/* Version Tablette */
+@media screen and (max-width: 991px)
+{
+
+}
+
+/* Version smartphone */
+
+@media screen and (max-width: 767px)
+{
+ 
+    header
+    {
+        margin: 0;
+        flex-direction: column;
+
+    }
+    #logo-site
+    {
+     margin-left: 40%; 
+    }
+
+    nav
+    {
+        order: 3;
+    }
+    
+    nav #onglet
+    {
+        width: 100%;
+    }
+
+    nav .li-onglet
+    {
+        width: 50%;
+        text-align: center;
+        padding: 20px 0 10px 0;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    nav .li-onglet .a-onglet
+    {
+        padding: inherit;
+    }
+
+    nav .li-onglet .a-onglet:hover
+    {
+        border-top: none;
+    }
+
+    nav .li-onglet:hover
+    {
+        border-bottom-color: #0065FC;
+    }
+}

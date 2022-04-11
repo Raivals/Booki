@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+@import url("assets/header.css"); /* Import de Header */
+
+@import url("assets/formulaire.css"); /* Import du Formulaire */
+
+@import url("assets/filtre.css");  /* Import des Filtres */
+
+@import url("assets/hotel.css");  /* Import de Hotel */
+
+@import url("assets/populaire.css"); /* Import de Populaire */
+
+@import url("assets/activites.css"); /* Import de Activités */
+
+@import url("assets/footer.css"); /* Import de Footer */
+
+
+body
+{
+
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#main{
+    margin: 0 50px 30px;
+}
+
+
+.flex
+{
+    display: flex;
+}
+
+.euros
+{
+    font-weight:  bold;
+}
+
+h2
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+h3
+{
+    font-weight: bold;
+    font-size: 10px;
+}
+
+p
+{
+    font-size: 12px;
+}
+
+/* Version Tablette */
+@media screen and (max-width: 991px)
+{
+
+}
+
+/* Version smartphone */
+
+@media screen and (max-width: 767px)
+{
+    #main
+    {
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

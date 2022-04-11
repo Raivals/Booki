@@ -1,0 +1,121 @@
+.text-filtre /* Div réservé à l'élement textre "Filtre" */
+{
+    align-self: center;
+}
+
+
+.filtres /* Div qui englobe la partie filtre */
+{
+    font-weight: bold;
+    font-size: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+
+.filtre /* Div qui englobe chaque sous partie "Economique / Familial / Romantique etc..." */
+{
+    align-items: center;
+    height: 40px;
+    border: 2px solid #F2F2F2;
+    border-left: none;
+    margin-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+}
+
+.filtre .descriptif  /* Descriptif = intitulé du curseur  */
+{
+    padding-left: 12px;
+}
+
+.filtre:hover
+{
+    cursor: pointer;
+    border-color: #0065FC;
+    color: #0065FC;
+}
+
+
+
+.Liste-filtre /* Div qui englobe la sous-partie "Economique / Familial / Romantique etc..." */
+{
+    flex-wrap: wrap;
+}
+
+.Filtre-icone /* Div qui englobe les <i> Filtres */
+{  
+    position: relative;
+    right: 1px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #DEEBFF;   
+}
+
+.Filtre-icone i 
+{
+    margin: auto;
+    color: #0065FC;
+}
+
+
+.Info-icone /* Div qui englobe le <i> Icone */
+{
+    height: 20px;
+    width: 20px;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.Info-icone i               
+{
+    margin: auto;
+    font-size: 13px;
+    color: #0065FC;  
+}
+
+
+
+/* Version Tablette */
+@media screen and (max-width: 991px)
+{
+    .filtre  /* Div qui englobe chaque sous partie "Economique / Familial / Romantique etc..." */
+    {
+        margin: 5px 0 5px 10px;
+    }
+
+    .formulaire
+    {
+        width: fit-content;
+    }
+}
+
+/* Version smartphone */
+
+@media screen and (max-width: 767px)
+{
+    .text-filtre /* Div réservé à l'élement textre "Filtre" */
+    {
+        margin-left: 20px;
+        margin-bottom: 10px;
+        align-self: inherit;
+    }
+    .filtres /* Div qui englobe la partie filtre */
+    {
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .filtre /* Div qui englobe chaque sous partie "Economique / Familial / Romantique etc..." */
+    {
+        margin: 5px 0 5px 20px;
+        width: fit-content;
+    }
+
+    .Info-icone /* Div qui englobe le <i> Icone */
+    {
+        margin-left: 20px;
+    }
+}             
