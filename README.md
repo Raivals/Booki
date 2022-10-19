@@ -1,6 +1,6 @@
 ![alt text](https://alexispayen.com/images/booki.png)
 
-Source: https://prograide.com/pregunta/2181/comment-ajouter-des-images-au-fichier-readmemd-sur-github
+
 
 # Booki
 Projet N°2 Openclassrooms : Transformez une maquette en site web avec HTML & CSS
